@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-2 mt-2">Calcola il prezzo del tuo biglietto</h1>
+        <form id="form-ticket" class="d-flex mb-2">
+            <div class="d-flex-column col padd-1 border">
+                <label for="user">Nome e Cognome</label>
+                <input type="text" id="user" placeholder="Inserisci nome e cognome">
+            </div>
+            <div class="d-flex-column col padd-1 border">
+                <label for="km">Km da percorrere</label>
+                <input type="text" id="km" placeholder="Inserisci i Km da percorrere">
+            </div>
+            <div class="d-flex-column col padd-1 border">
+                <label for="age">Fascia d'età</label>
+                <select id="age">
+                    <option>Minorenne</option>
+                    <option>Maggiorenne</option>
+                    <option>Over 65</option>
+                </select>
+            </div>
+        </form>
+        <input id="generates" type="button" value="Genera"></input>
+        <button id="cancel">Annulla</button>
+        <div id="ticket" class="mt-2 d-none">
+            <h2>Il tuo biglietto</h2>
+            <div class="d-flex mt-2">
+                <div class="d-flex-column col-5">
+                    <p>Nome passeggero:</p>
+                    <span id="user-name"></span>
+                </div>
+                <div class="d-flex-column col-5">
+                    <p>Offerta:</p>
+                    <span id="ticket-discount"></span>
+                </div>
+                <div class="d-flex-column col-5">
+                    <p>Carrozza:</p>
+                    <span id="carriage"></span>
+                </div>
+                <div class="d-flex-column col-5">
+                    <p>Codice CP:</p>
+                    <span id="ticket-number"></span>
+                </div>
+                <div class="d-flex-column col-5">
+                    <p>Costo Biglietto:</p>
+                    <span id="ticket-price"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jscript.js"></script>
+</body>
+
+</html>
